@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h1>Puppy Adoption Page</h1>
+        <h2>Please enter your information for adoption so we can email you back.</h2>
+        <h3>Please note: First Name, Last Name and Password are mandatory</h3>
+
+    </head>
+    <body>
+        <form method="GET">
+            <label for="firstname">First Name</label>
+            <input type="text" name="firstname" id="firstname" placeholder="First Name">
+
+            <label for="lastname">Last Name</label>
+            <input type="text" name="lastname" id="lastname" placeholder="Last Name">
+            <br>
+            <br>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="abcdef@email.com">
+
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="Password">
+            <br>
+            <p>Are you over the age of 18?</p>
+            <br>
+            
+            <label for="yes">Yes</label>
+            <input type="radio" name="button" value="yes">
+
+            <label for="no">No</label>
+            <input type="radio" name="button" value="no">
+            <br>
+            <p>your preffered payment method</p>
+            <select name="payment">
+                <option value="credit">Credit Card</option>
+                <option value="debit">Debit Card</option>
+                <option value="paypal">PayPal</option>
+            </select>
+            <br>
+            <br>
+            <input type="submit" name="Submit" id="submit">
+
+
+
+        </form>
+    </body>
+
+
+</html>
