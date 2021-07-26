@@ -6,8 +6,15 @@
     <title></title>
 </head>
 <body>
-    <h1>Welcome</h1>
-    <h2>this is your name {{name}}</h2>
-    <h3>this is list {{list_name}}</h3>
+    <ul>
+        {% for puppy in my_list %}
+        <li>{{puppy}}</li>
+        {% endfor %}
+    </ul>
+    {% if 'rufus' in my_list%}
+    <p> found</p>
+    {% else %}
+    <p>rufus not found</p>
+    {% endif %}
 </body>
 </html>

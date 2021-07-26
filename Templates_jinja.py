@@ -4,10 +4,9 @@ app= Flask(__name__)
 
 @app.route('/')
 def index():
-    name= 'nitin'
-    list_name= list(name)
+    my_list= ['rufus','pepsi','mogli','robin']
 
-    return render_template('basic.html',name=name,list_name=list_name)
+    return render_template('basic.html',my_list=my_list)
 
 if __name__== '__main__':
     app.run(debug= True)
