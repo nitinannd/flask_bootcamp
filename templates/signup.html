@@ -1,0 +1,19 @@
+{% extends "structure.html" %}
+
+{% block content %}
+<div class="card">
+    <h5 class="card-header">Sign Up</h5>
+    <div class="card-body">
+        <form action="{{url_for('thank_you')}}">
+            <label for="first">First Name</label>
+            <input type="text" name="first">
+            <label for="last">Last Name</label>
+            <input type="text" name="last">
+            <input type="submit" value="submit">
+            
+        </form>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+
+{% endblock content %}
